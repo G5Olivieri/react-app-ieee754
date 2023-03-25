@@ -9,8 +9,8 @@ Nodejs, testado na versão 19
 # Executando
 
 ```
-git clone https://github.com/G5Olivieri/react-app-ieee764
-cd react-app-ieee764
+git clone https://github.com/G5Olivieri/react-app-ieee754
+cd react-app-ieee754
 npm i
 npm run dev
 ```

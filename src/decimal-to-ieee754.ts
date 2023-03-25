@@ -117,7 +117,7 @@ export const buildIEEE754FromBits = (
   return signBit + exponentBinary.padStart(8, "0") + mantissa.padEnd(23, "0");
 };
 
-export const decimalToIEEE764 = (value: string, nbits: number) => {
+export const decimalToIEEE754 = (value: string, nbits: number) => {
   let sign = extractSign(value);
   const [integer, frac] =
     splitIntAndFrac(value);

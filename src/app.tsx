@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { decimalToIEEE764 } from "./decimal-to-ieee764";
+import { decimalToIEEE754 } from "./decimal-to-ieee754";
 
 const BitBox = styled.span`
   display: inline-flex;
@@ -55,7 +55,7 @@ export const App: React.FC = () => {
   const [binary, setBinary] = useState("00000000000000000000000000000000");
 
   const handleCalculate = () => {
-    setBinary(decimalToIEEE764(value, 32));
+    setBinary(decimalToIEEE754(value, 32));
   };
 
   return (
